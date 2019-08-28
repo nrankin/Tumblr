@@ -39,6 +39,7 @@ RSpec.configure do |config|
   #config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   config.include Features::SessionHelpers, type: :feature
+  config.include ActionView::Helpers::DateHelper
 
   config.include FactoryBot::Syntax::Methods
 
